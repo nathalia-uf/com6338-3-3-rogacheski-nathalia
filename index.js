@@ -1,37 +1,39 @@
-function runQuiz() {
+function runQuiz(){
+    console.log('start-quiz')
     var questionsArr = [
         {
-          question: 'Is the cup half full?',
+          question: 'The cup half full',
           answer: true
         }
-    ]
-    var questionsArr = [
         {
-          question: 'Is today a good day?',
+          question: 'Today a good day',
           answer: true
         }
-    ]  
-    var questionsArr = [
-    {
-      question: 'Do you like your job?',
-      answer: true
-    }
+        {
+        question: 'You enjoy your job',
+        answer: true
+        }
+        {
+        question: 'You are currently smiling',
+        answer: true
+        }
+        {
+        question: 'You prefer JavaScript',
+        answer: true
+        }
     ]
-    var questionsArr = [
-    {
-      question: 'Are you smiling?',
-      answer: true
-    }
-    ]
-    var questionsArr = [
-    {
-      question: 'Do you like Javascript?',
-      answer: true
-    }
-    ]
+    var numOfAgrees = 0
     for (var i = 0; i < questionsArr.length; i++) {
-        var question = questionsArr
-        var answer = confirm
-
+        var question = questionsArr [i]
+        console.log(question)
+        var answer = confirm(question)
+        if (answer) {
+            numOfAgrees++
+        }
+    }
+    if(numOfAgrees >= 3) {
+        alert("2023 is going to be your year!")
+    } else {
+        alert("2023 is not your year :(")
     }
 }
