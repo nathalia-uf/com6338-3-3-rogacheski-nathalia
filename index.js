@@ -30,9 +30,5 @@ function runQuiz() {
     } else {
         alert("2023,is not your year :(")
     }
-
-    while (numOfAgrees <=5) {
-        alert ("Score" + answer/5)
-    }
 }
 
