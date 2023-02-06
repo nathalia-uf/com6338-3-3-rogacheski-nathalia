@@ -25,14 +25,14 @@ function runQuiz() {
         }
     }
 
-    function scoreTest(answer, questions) {
-        var score = (answer/questions) * 100;
-        return score;
-
     if (numOfAgrees >= 3) {
         alert("2023, is your year :)")
     } else {
         alert("2023,is not your year :(")
+    }
+
+    while (numOfAgrees <=5) {
+        alert ("Score" + answer/5)
     }
 }
 
